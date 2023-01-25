@@ -56,11 +56,10 @@ jobs:
                       npm run frontend:deploy
 
 workflows:
-    udagram:
+    main:
         jobs:
-            - build
-                filters:
-                    branches:
-                        only:
-                            - master
-
+            - build:
+                  filters:
+                      branches:
+                          only:
+                              - master
